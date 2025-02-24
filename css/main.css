@@ -1,61 +1,86 @@
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#display {
+    width: 100%;
+    height: 80px;
+    background-color: #3a4452;
+    color: #fff;
+    font-size: 32px;
+    text-align: right;
+    padding: 24px;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
+    border: #fff 2px solid;
+    margin-bottom: 24px;
 }
 
 #container {
-  border: 1px solid black;
-  width: 500px;
-  height: 600px;
-  margin: 0 auto;
-  padding-top: 40px;
-  border-radius: 25px;
+  width: 100%;
+  height: 100vh;
+  background-color: #e3f9ff;
+  background: rgb(131,58,180);
+background: linear-gradient(45deg, rgba(131,58,180,1) 14%, rgba(9,24,79,0.958420868347339) 72%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #title {
-  margin: 20px 0 50px 30px;
-  font-size: 48px;
+  text-align: center;
+  background-image: url(images/Background.webp);
+  
+ 
 }
 
-#logo {
-  display: flex;
-  justify-content: end;
-  margin-bottom: 16px;
-  padding-right: 8px;
-  font-size: 16px;
-  font-weight: bold;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+#title h1 {
+  font-size: 80px;
+  margin: 16px;
+  color: #fff;
 }
-#calScreen {
-  display: flex;
-  justify-content: end;
-  align-items: end;
-  padding: 8px;
-  font-size: 32px;
-  border: 1px solid black;
-  width: 450px;
-  height: 80px;
-  margin: 0 auto;
+
+#title p {
+  font-size: 40px;
+  color: #ffffffc5;
+}
+
+#calculator {
+  background-color: #3a4452;
+  padding: 24px;
   border-radius: 10px;
-}
 
-#cal-buttons {
-  width: 450px;
-  height: 400px;
-  margin: 20px auto; 
-} 
-
-.btn-cols {
-  display: flex;
-  flex: 1;
-  height: 100px;
 }
 
 .button {
-  width: 112.5px;
-  font-weight: bold;
-  font-size: 24px;
-  border-radius: 60px;
-  margin: 8px;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: -8px -8px 15px rgba(255, 255,255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  background-color: transparent;
 }
+
+#operator {
+  font-weight: bold;
+}
+
+
+#equalsTo {
+  width: 145px;
+}
+
+#operator, #percent {
+  background-color: orange;
+}
+
+#allClear, #clear {
+  background-color: red;
+}
+
