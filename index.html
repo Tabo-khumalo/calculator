@@ -11,7 +11,7 @@
   
   
   <div id="container">
-    
+
     <header id="title">
       <h1>MathMate</h1>
       <p slogan>"MathMate: Your Smartest Math Buddy!"</p>
@@ -24,44 +24,43 @@
       </div>
 
       <div class="buttons">
-        <button class="button" id="allClear">AC</button>
-        <button class="button" id="clear">C</button>
-        <button class="button" id="percent">%</button>
-        <button class="button" id="operator">/</button>
+        <button onclick="allClear()" class="button" id="allClear">AC</button>
+        <button onclick="switchOff()" class="button on" id="off">Off</button>
+        <button onclick="getOperator('%')" class="button" id="percent">%</button>
+        <button onclick="getOperator('/')" class="button" id="operator">/</button>
       </div>
 
       <div class="buttons">
-        <button class="button" id="num">7</button>
-        <button class="button" id="num">8</button>
-        <button class="button" id="num">9</button>
-        <button class="button" id="operator">*</button>
+        <button onclick="getNum(7)" class="button" id="num">7</button>
+        <button onclick="getNum(8)" class="button" id="num">8</button>
+        <button onclick="getNum(9)" class="button" id="num">9</button>
+        <button onclick="getOperator('*')" class="button" id="operator">*</button>
       </div>
 
       <div class="buttons">
-        <button class="button" id="num">4</button>
-        <button class="button" id="num">5</button>
-        <button class="button" id="num">6</button>
-        <button class="button" id="operator">-</button>
+        <button onclick="getNum(4)" class="button" id="num">4</button>
+        <button onclick="getNum(5)" class="button" id="num">5</button>
+        <button onclick="getNum(6)" class="button" id="num">6</button>
+        <button onclick="getOperator('-')" class="button" id="operator">-</button>
       </div>
 
       <div class="buttons">
-        <button class="button" id="num">1</button>
-        <button class="button" id="num">2</button>
-        <button class="button" id="num">3</button>
-        <button class="button" id="operator">+</button>
+        <button onclick="getNum(1)" class="button" id="num">1</button>
+        <button onclick="getNum(2)" class="button" id="num">2</button>
+        <button onclick="getNum(3)" class="button" id="num">3</button>
+        <button onclick="getOperator('+')" class="button" id="operator">+</button>
       </div>
 
       <div class="buttons">
-        <button class="button" id="num">0</button>
-        <button class="button" id="period">.</button>
-        <button class="button" id="equalsTo">=</button>
+        <button onclick="getNum(0)" class="button" id="num">0</button>
+        <button onclick="getOperator('.')" class="button" id="period">.</button>
+        <button onclick="operate()" class="button" id="equalsTo">=</button>
       </div>
 
 
     </content>
   </div>
 
-
-  <script src="./Javascript/script.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>

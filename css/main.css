@@ -32,9 +32,6 @@ background: linear-gradient(45deg, rgba(131,58,180,1) 14%, rgba(9,24,79,0.958420
 
 #title {
   text-align: center;
-  background-image: url(images/Background.webp);
-  
- 
 }
 
 #title h1 {
@@ -65,11 +62,10 @@ background: linear-gradient(45deg, rgba(131,58,180,1) 14%, rgba(9,24,79,0.958420
   color: #fff;
   cursor: pointer;
   background-color: transparent;
-}
-
-#operator {
   font-weight: bold;
 }
+
+
 
 
 #equalsTo {
@@ -80,7 +76,7 @@ background: linear-gradient(45deg, rgba(131,58,180,1) 14%, rgba(9,24,79,0.958420
   background-color: orange;
 }
 
-#allClear, #clear {
+#allClear, #off {
   background-color: red;
 }
 
